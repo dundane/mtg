@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root {
+  /* change the values below to your colors from your palette */
+
+  --primary-color: #023c40;
+  --secondary-color: #523a34;
+  --font-on-dark: #f4ecd6;
+  --font-on-light: #523a34;
+  --highlight-color: #cc444b;
+  --primary-background-color: #523a34;
+  --secondary-background-color: #f4ecd6;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Exo 2", Arial, sans-serif;
+  --paragraph-font: "Quicksand", Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--font-on-dark);
+}
+
+#magic-card-search {
+  width: 400px;
+  display: grid;
+  grid-column: 3rem 3rem;
+}
+
+label {
+  font-family: var(--paragraph-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
+
+#color-black {
+  background-color: black;
+  color: white;
+}
+
+#color-blue {
+  background-color: blue;
+  color: white;
+}
+
+#color-green {
+  background-color: darkgreen;
+  color: white;
+}
+
+#color-red {
+  background-color: darkred;
+  color: white;
+}
+
+#color-white {
+  background-color: white;
+  color: black;
+}
+.checks {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#magic-card-search {
+  background-color: var(--secondary-background-color);
+  color: var(--font-on-light);
+}

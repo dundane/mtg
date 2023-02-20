@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <H1>Find your next favorite Magic Card</H1>
+    </header>
+
+    <form id="magic-card-search">
+        <label for="type-selector">Select the Type of Card</label>
+        <select id="type-selector">
+            <option value="">All Types</option>
+            <option value="creature">Creature</option>
+            <option value="instant">Instant</option>
+            <option value="sorcery">Sorcery</option>
+            <option value="land">Land</option>
+            <option value="artifact">Artifact</option>
+            <option value="enchantment">Enchantment</option>
+            <option value="planeswalker">Planeswalker</option>
+        </select>
+        <label for="format-selector">Select the Desired Format</label>
+        <select id="format-selector">
+            <option value="">All Formats</option>
+            <option value="standard">Standard</option>
+            <option value="pioneer">Pioneer</option>
+            <option value="modern">Modern</option>
+            <option value="pauper">Pauper</option>
+            <option value="vintage">Vintage</option>
+            <option value="commander">Commander</option>
+            <option value="brawl">Brawl</option>
+            <option value="paupercommander">Pauper Commander</option>
+        </select>
+        <label for="exclude-colors">Exclude Slected Colors</label>
+        <input id="exclude-colors" class="checks" type="checkbox">
+        <label for="color-black">Black</label>
+        <input id="color-black" class="checks" type="checkbox">
+        <label for="color-blue">Blue</label>
+        <input id="color-blue" class="checks" type="checkbox">
+        <label for="color-green">Green</label>
+        <input id="color-green" class="checks" type="checkbox">
+        <label for="color-red">Red</label>
+        <input id="color-red" class="checks" type="checkbox">
+        <label for="color-white">White</label>
+        <input id="color-white" class="checks" type="checkbox">
+        <label for="color-colorless">Colorless</label>
+        <input id="color-colorless" class="checks" type="checkbox">
+
+        <label for="only-legendary">Only Include Legendary Cards</label>
+        <input id="only-legendary" class="checks" type="checkbox">
+        <button id="search-submit" type="button">Get Random Card</button>
+    </form>
+    <section id="query-info">
+
+    </section>
+    <section id="card-info">
+
+    </section>
+
+    <section id="card-history">
+
+    </section>
+    <script src="scripts/magicsearch.js"></script>
+</body>
+
+</html>
